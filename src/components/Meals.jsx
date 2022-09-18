@@ -9,7 +9,7 @@ const Meals = () => {
 
     return ( 
         <> 
-            <h2>Creating meals by {name} who have {age} yea  s</h2>
+            <h2>Creating meals by {name} who have {age} years</h2>
         </>
      );
 }
