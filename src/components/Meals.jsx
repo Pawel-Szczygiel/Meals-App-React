@@ -5,7 +5,7 @@ import Loader from "./Loader";
 
 const Meals = () => {
     
-    const { loading, meals } = useGlobalContext();
+    const { loading, meals, selectMeal } = useGlobalContext();
     
     if (loading) {
         return <Loader />
@@ -18,14 +18,17 @@ const Meals = () => {
             </section>
         )
     }
-    
-    
+ 
     const showMeals = meals.map(meal => {
         const { idMeal, strMeal: title, strMealThumb: image } = meal;
     
         return  (
             <article key={idMeal} className='single-meal' >
-                <img src={image} className='img' alt={title}/>
+                <img 
+                    src={image} 
+                    className='img' 
+                    alt={title} 
+                    onClick={() => selectMeal(idMeal)}/>
                 <footer>
                     <h5>{title}</h5>
                     <button className='like-btn' ><BsHandThumbsUp/></button>
