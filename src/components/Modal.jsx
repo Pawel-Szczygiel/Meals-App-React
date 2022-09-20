@@ -14,7 +14,12 @@ const Modal = () => {
                     <h4>{title}</h4>
                     <p>Cooking Instructions</p>
                     <p>{text}</p>
-                    <a href={source} target='_blank'>Original Source</a>
+                    <a 
+                        href={source} 
+                        target='_blank' 
+                        rel="noopener noreferrer">
+                        Original Source
+                    </a>
                     <button className='btn btn-hipster close-btn' onClick={closeModal}>close</button> 
                 </div>
             </div>
