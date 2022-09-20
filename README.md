@@ -1,3 +1,7 @@
+# Meals app with React, hosting on Netlify
+
+![Zrzut ekranu (63)](https://user-images.githubusercontent.com/74866405/191376513-5f743592-f204-49ee-99f8-fb37636a1b56.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
