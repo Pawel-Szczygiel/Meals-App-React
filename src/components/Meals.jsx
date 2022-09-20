@@ -42,9 +42,6 @@ const Meals = () => {
     });
 
 
-
-    
-
     return ( 
         <section className='section-center'> 
             { showMeals }
