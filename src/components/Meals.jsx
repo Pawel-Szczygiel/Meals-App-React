@@ -5,7 +5,7 @@ import Loader from "./Loader";
 
 const Meals = () => {
     
-    const { loading, meals, selectMeal } = useGlobalContext();
+    const { loading, meals, selectMeal, addToFavorites } = useGlobalContext();
     
     if (loading) {
         return <Loader />
@@ -31,7 +31,11 @@ const Meals = () => {
                     onClick={() => selectMeal(idMeal)}/>
                 <footer>
                     <h5>{title}</h5>
-                    <button className='like-btn' ><BsHandThumbsUp/></button>
+                    <button 
+                        className='like-btn'
+                        onClick={() => addToFavorites(idMeal)} >
+                        <BsHandThumbsUp/>
+                    </button>
                 </footer>
             </article>
         )
